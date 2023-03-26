@@ -76,11 +76,29 @@
     {{!-- The global footer at the very bottom of the screen --}}
     <footer class="site-footer outer">
         <div class="inner">
-            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <section class="copyright" id="copyright-text">
+                <a href="{{@site.url}}">{{@site.title}}</a> &copy;
+            </section>
             <nav class="site-footer-nav">
-                {{navigation type="secondary"}}
+                <center>
+                    <a class="author-profile-social-link" href={{@custom.instagram_url}} target="_blank" rel="noopener">
+                        {{> "icons/instagram"}}
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="author-profile-social-link" href={{@custom.mastodon_url}} target="_blank" rel="noopener">
+                        {{> "icons/mastodon"}}
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="author-profile-social-link" href={{@custom.twitter_url}} target="_blank" rel="noopener">
+                        {{> "icons/twitter"}}
+                    </a>
+                </center>
             </nav>
-            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+            <div>
+                <a href={{@custom.contact_email_url}} target="_blank" rel="noopener">Bedir</a>
+                &#x1F91D;
+                <a href="https://github.com/TryGhost/Ghost" target="_blank" rel="noopener">Ghost</a>
+            </div>
         </div>
     </footer>
 
@@ -110,4 +128,7 @@ $(document).ready(function () {
 {{ghost_foot}}
 
 </body>
+{{! Tab bar colors for Safar 15+}}
+<meta name="theme-color" content="#f38ba0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0b0c" media="(prefers-color-scheme: dark)">
 </html>

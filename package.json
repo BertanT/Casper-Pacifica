@@ -168,6 +168,22 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "instagram_url": {
+                "type": "text",
+                "default": "https://instagram.com/"
+            },
+            "mastodon_url": {
+                "type": "text",
+                "default": "https://mastodon.social/"
+            },
+            "twitter_url": {
+                "type": "text",
+                "default": "https://twitter.com/"
+            },
+            "contact_email_url": {
+                "type": "text",
+                "default": "mailto:"
             }
         }
     },

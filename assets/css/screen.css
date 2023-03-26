@@ -2020,7 +2020,7 @@ iframe.instagram-media + script + :not([id]) {
     padding-top: 48px;
     padding-bottom: 140px;
     color: #fff;
-    background: color-mod(var(--color-darkgrey) l(-5%));
+    background: #f38ba0;
 }
 
 .site-footer .inner {
@@ -2065,9 +2065,8 @@ iframe.instagram-media + script + :not([id]) {
 
 .site-footer-nav a {
     position: relative;
-    display: inline-flex;
     align-items: center;
-    margin-left: 10px;
+    justify-content: center;
 }
 
 .site-footer-nav li:not(:first-child) a:before {
@@ -2475,6 +2474,15 @@ html.dark-mode .footer-cta-title {
     html.auto-color .footer-cta-title {
         color: #fff;
     }
+
+    .site-footer {
+        position: relative;
+        margin: max(12vmin, 64px) 0 0 0;
+        padding-top: 48px;
+        padding-bottom: 140px;
+        color: #fff;
+        background: #1a1b1c;
+    }   
 
     @media (max-width: 767px) {
         html.auto-color .gh-head-open #gh-head .gh-head-actions {
