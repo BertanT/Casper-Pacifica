@@ -89,6 +89,14 @@ into the {body} tag of the default.hbs template --}}
 
     <section class="gh-content gh-canvas">
         {{content}}
+        {{! Social media links under each post }}
+        <hr>
+        <center>
+            <a class="article-social-links"> Follow us on social media for even more content!<br></a>
+            <a class="article-social-links" href={{@custom.instagram_url}}><u><b>Instagram</b></u> | </a>
+            <a class="article-social-links" href={{@custom.mastodon_url}}><u><b>Mastodon</b></u> | </a>
+            <a class="article-social-links" href={{@custom.twitter_url}}><u><b>Twitter</b></u></a>
+        </span>
     </section>
 
     {{#if comments}}

@@ -1809,6 +1809,15 @@ iframe.instagram-media + script + :not([id]) {
 /* 6.3. Read more
 /* ---------------------------------------------------------- */
 
+a.article-social-links {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 2rem;
+    color: currentColor;
+    text-decoration: none;
+    line-height: 1.6em;
+}
+
 .read-more-wrap {
     margin-top: 2.4vmin;
 }
