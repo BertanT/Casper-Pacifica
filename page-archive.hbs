@@ -1,0 +1,33 @@
+{{!< default}}
+
+<header class="article-header gh-canvas">
+    <h1>Posts Archive</h1>
+</header>
+
+<section class="gh-canvas">
+    <article class="content-wrap">
+        {{#get "posts" limit="all" include="authors" order="published_at desc"}}
+            {{#foreach posts visibility="all"}}
+                <article class="post post-date-{{date format="M"}}">
+                    <div class="archive-post-list-label" {{#if @first}}style="margin:0;"{{/if}}>{{date format="MMMM YYYY"}}</div>
+                    <a href={{url}} class="gh-post-bookmark-wrapper" target="_blank" rel="noopener noreferrer" data-test-complete-bookmark="">
+                    <div class="gh-post-bookmark-container">
+                        <div class="gh-post-bookmark">
+                            <div class="gh-post-bookmark-content">
+                                <div class="gh-post-bookmark-title">{{title}}</div>
+                                <div class="gh-post-bookmark-details">
+                                    <div class="gh-post-bookmark-authors">{{authors limit=1}}</div>
+                                    <div class="gh-post-bookmark-date">{{date published_at format="MMMM DD, YYYY"}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </article>
+            {{/foreach}}
+        {{/get}}
+    </article>
+</section>
+
+
+
