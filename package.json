@@ -98,6 +98,10 @@
                 ],
                 "default": "Logo on cover"
             },
+            "site_title_next_to_logo": {
+                "type": "boolean",
+                "default": true
+            },
             "title_font": {
                 "type": "select",
                 "options": [

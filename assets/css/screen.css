@@ -285,6 +285,12 @@ production stylesheet in assets/built/screen.css
 
 .gh-head a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.gh-head img {
+    margin-right: 10px;
 }
 
 .gh-head-inner {

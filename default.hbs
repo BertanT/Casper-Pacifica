@@ -27,6 +27,9 @@
                 <a class="gh-head-logo{{#unless @site.logo}} no-image{{/unless}}" href="{{@site.url}}">
                     {{#if @site.logo}}
                         <img src="{{@site.logo}}" alt="{{@site.title}}">
+                        {{#if @custom.site_title_next_to_logo}}
+                            {{@site.title}}
+                        {{/if}}
                     {{else}}
                         {{@site.title}}
                     {{/if}}
