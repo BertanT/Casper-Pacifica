@@ -22,9 +22,9 @@
         "postship": "git fetch && gulp release"
     },
     "author": {
-        "name": "Ghost Foundation, M. Bertan Tarakçıoğlu",
+        "name": "Ghost Foundation",
         "email": "hello@ghost.org",
-        "url": "https://github.com/BertanT"
+        "url": "https://github.com/tryghost/ghost/"
     },
     "gpm": {
         "type": "theme",
@@ -40,10 +40,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BertanT/Casper-Pacifica.git"
+        "url": "https://github.com/tryghost/Casper.git"
     },
-    "bugs": "https://github.com/BertanT/Casper-Pacifica/issues",
-    "contributors": "https://github.com/BertanT/Casper-Pacifica/graphs/contributors",
+    "bugs": "https://github.com/tryghost/Casper/issues",
+    "contributors": "https://github.com/tryghost/Casper/graphs/contributors",
     "devDependencies": {
         "@tryghost/release-utils": "0.8.1",
         "autoprefixer": "10.4.7",
